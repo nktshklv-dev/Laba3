@@ -67,6 +67,12 @@ build CMakeFiles/Laba3.dir/Backpack.cpp.o: CXX_COMPILER__Laba3_unscanned_Debug /
   OBJECT_DIR = CMakeFiles/Laba3.dir
   OBJECT_FILE_DIR = CMakeFiles/Laba3.dir
 
+build CMakeFiles/Laba3.dir/DynamicArray.cpp.o: CXX_COMPILER__Laba3_unscanned_Debug /Users/nick/Documents/Labs/Sem3/Laba3/DynamicArray.cpp || cmake_object_order_depends_target_Laba3
+  DEP_FILE = CMakeFiles/Laba3.dir/DynamicArray.cpp.o.d
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/Laba3.dir
+  OBJECT_FILE_DIR = CMakeFiles/Laba3.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Laba3
@@ -75,7 +81,7 @@ build CMakeFiles/Laba3.dir/Backpack.cpp.o: CXX_COMPILER__Laba3_unscanned_Debug /
 #############################################
 # Link the executable Laba3
 
-build Laba3: CXX_EXECUTABLE_LINKER__Laba3_Debug CMakeFiles/Laba3.dir/main.cpp.o CMakeFiles/Laba3.dir/Item.cpp.o CMakeFiles/Laba3.dir/Backpack.cpp.o
+build Laba3: CXX_EXECUTABLE_LINKER__Laba3_Debug CMakeFiles/Laba3.dir/main.cpp.o CMakeFiles/Laba3.dir/Item.cpp.o CMakeFiles/Laba3.dir/Backpack.cpp.o CMakeFiles/Laba3.dir/DynamicArray.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk
   OBJECT_DIR = CMakeFiles/Laba3.dir
   POST_BUILD = :

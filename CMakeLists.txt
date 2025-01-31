@@ -7,4 +7,7 @@ add_executable(Laba3 main.cpp
         Backpack.h
         Item.h
         Item.cpp
-        Backpack.cpp)
+        Backpack.cpp
+        ISequence.h
+        DynamicArray.h
+        DynamicArray.tpp)
