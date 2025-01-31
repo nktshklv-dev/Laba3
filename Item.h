@@ -1,16 +1,15 @@
-//
-// Created by Nikita on 1/31/25.
-//
-
 #ifndef ITEM_H
 #define ITEM_H
 
-class Item {
-public:
+struct Item {
     int weight;
+    int volume;
     int value;
 
-    Item(int w, int v);
+    Item(int weight, int volume, int value);
+    Item();
+    bool operator==(const Item& other) const;
+    bool operator!=(const Item& other) const;
 };
 
-#endif
+#endif // ITEM_H

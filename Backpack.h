@@ -1,17 +1,17 @@
-
 #ifndef BACKPACK_H
 #define BACKPACK_H
 
-#include <vector>
+#include <string>
+#include "DynamicArray.h"
+#include "HashTable.h"
 #include "Item.h"
+#include "State.h"
 
-class Backpack {
-public:
-    int capacity;
-    std::vector<Item> items;
+std::string CreateCacheKey(int idx, int weight, int volume);
 
-    Backpack(int cap);
-    void addItem(Item item);
-};
+void FindBestCombination(const DynamicArray<Item>& items, int weightLimit, int volumeLimit,
+                         State current, int idx, State& best, int& bestVal, HashTable<std::string, int>& cache);
 
-#endif
+State OptimizePack(const DynamicArray<Item>& items, int weightLimit, int volumeLimit);
+
+#endif // BACKPACK_H

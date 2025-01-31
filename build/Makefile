@@ -177,6 +177,30 @@ Item.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Laba3.dir/build.make CMakeFiles/Laba3.dir/Item.cpp.s
 .PHONY : Item.cpp.s
 
+State.o: State.cpp.o
+.PHONY : State.o
+
+# target to build an object file
+State.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Laba3.dir/build.make CMakeFiles/Laba3.dir/State.cpp.o
+.PHONY : State.cpp.o
+
+State.i: State.cpp.i
+.PHONY : State.i
+
+# target to preprocess a source file
+State.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Laba3.dir/build.make CMakeFiles/Laba3.dir/State.cpp.i
+.PHONY : State.cpp.i
+
+State.s: State.cpp.s
+.PHONY : State.s
+
+# target to generate assembly for a file
+State.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Laba3.dir/build.make CMakeFiles/Laba3.dir/State.cpp.s
+.PHONY : State.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -216,6 +240,9 @@ help:
 	@echo "... Item.o"
 	@echo "... Item.i"
 	@echo "... Item.s"
+	@echo "... State.o"
+	@echo "... State.i"
+	@echo "... State.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

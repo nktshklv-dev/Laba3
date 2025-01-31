@@ -10,4 +10,8 @@ add_executable(Laba3 main.cpp
         Backpack.cpp
         ISequence.h
         DynamicArray.h
-        DynamicArray.tpp)
+        DynamicArray.tpp
+        HashTable.h
+        HashTable.tpp
+        State.h
+        State.cpp)
